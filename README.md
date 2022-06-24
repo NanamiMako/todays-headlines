@@ -38,7 +38,7 @@ git remote -v
 git remote rm origin
 
 ### 添加远程仓库地址
-remote add origin http
+git remote add origin http
 
 ### 提交代码
 git push -u origin master
