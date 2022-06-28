@@ -43,3 +43,9 @@ git remote add origin http
 ### 提交代码
 git push -u origin master
 
+### gitee仓库地址
+https://gitee.com/NanamiMako/todays-headlines.git
+
+### github仓库地址
+https://github.com/NanamiMako/todays-headlines.git
+
