@@ -1,4 +1,4 @@
-# ete
+# todays-headlines
 
 ## Project setup
 ```
