@@ -7,6 +7,7 @@ import 'amfe-flexible' //导入flexible
 import Vant from 'vant'
 import 'vant/lib/index.css'
 import './styles/index.less' //导入全局less(放在vant样式表后面做自定义替换)
+import './utils/dayjs' // 加载 dayjs 初始化配置
 Vue.use(Vant)
 
 import axios from 'axios'
