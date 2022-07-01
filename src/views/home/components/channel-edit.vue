@@ -13,6 +13,7 @@
                       true，则作用该类名
                       false，不作用类名
          -->
+        <!-- 上来将所有频道进行可修改 最后过滤其中某个不可修改 -->
         <van-icon v-show="isEdit && !fiexdChannels.includes(channel.id)" slot="icon" name="clear"></van-icon>
         <span class="text" :class="{ active: index === active }" slot="text">{{ channel.name }}</span>
       </van-grid-item>
@@ -119,6 +120,8 @@ export default {
             id: channel.id, // 频道ID
             seq: this.myChannels.length // 序号
           })
+          // 缓存至本地
+          setItem('TOUTIAO_CHANNELS', this.myChannels)
         } catch (err) {
           this.$toast('保存失败，请稍后重试')
         }
