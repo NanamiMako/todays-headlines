@@ -64,6 +64,9 @@
 		        if (results.length) {
 		          // 如果有，则更新获取下一个数据的页码
 		          this.page++
+              if (this.page>=3) {
+                this.finished = true
+              }
 		        } else {
 		          // 如果没有，则将加载状态 finished 设置为结束
 		          this.finished = true
